@@ -1,0 +1,16 @@
+server:
+  port: 9989
+spring:
+  application:
+    name: LaptopGuide
+  datasource:
+    url: jdbc:mysql://localhost:3306/LaptopDataBase
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
